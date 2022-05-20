@@ -83,7 +83,7 @@ class DRCNTrainer(object):
             return transform(data)
 
     def save(self):
-        model_out_path = "/DRCN/DRCN_model_path.pth"
+        model_out_path = "DRCN_model_path.pth"
         torch.save(self.model, model_out_path)
         print("Checkpoint saved to {}".format(model_out_path))
 
